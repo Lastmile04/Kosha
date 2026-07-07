@@ -8,7 +8,7 @@ These were the open questions from planning. They are now closed for v0.1 — se
 
 1. **A Resource can belong to multiple Topics** (many-to-many). Beej's Guide can live under both "Networking" and "C". → `decisions/0001-multiple-topics-per-resource.md`
 2. **A Topic is a catalog, not a folder.** It is an organizational view over Resources, not an exclusive owner of them.
-3. **A Resource does NOT require a Topic to exist.** A Resource can be saved unassigned ("Inbox" state) and organized later. This removes the deletion contradiction raised during review (deleting a Topic can never leave a Resource in an invalid state).
+3. **A Resource does NOT require a Topic to exist.** A Resource can be saved unassigned ("Inbox" state) and organized later.
 
 ## Core Entities
 
@@ -16,7 +16,7 @@ These were the open questions from planning. They are now closed for v0.1 — se
 The fundamental, independently-existing unit of Kosha. Represents any learning material.
 - `id`
 - `user_id`
-- `url` (has identity — the same URL saved twice is the same logical resource; see invariants)
+- `url` (has identity — the same URL saved twice is the same logical resource)
 - `title`
 - `note` (short text — the "why I saved this")
 - `resource_type` (enum: youtube, article, docs, repo, pdf, book, other)
