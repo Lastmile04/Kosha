@@ -2,7 +2,7 @@
 
 ## In Scope
 - Resource as the central entity, independently owned by a User.
-- Topic as an organizational context; a Resource may belong to **one or more** Topics (see decision 0001).
+- Topic as an organizational context; a Resource may belong to **one or more** Topics.
 - Saving a Resource with URL, title, type, personal note ("why I saved it"), and status.
 - Topic-based browsing and global search across titles, URLs, descriptions, and notes.
 - Basic status tracking (to_learn / in_progress / completed).
